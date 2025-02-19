@@ -1,0 +1,472 @@
+<?php
+/*----- header ----*/
+require_once ('topbar.php');
+/*---------- Side bar -----*/
+require_once ('sidebar.php');
+?>
+<?php
+if(isset($_POST['submit']))
+{
+
+  $unit = $_POST['unit'];
+}
+?>
+ <!-- //////////////////////////////////////////////////////////////////////////// --> 
+<!-- START CONTENT -->
+<div class="content">
+
+  <!-- Start Page Header -->
+  <div class="page-header">
+    <!--<h1 class="title">Manage Report</h1>-->
+      <ol class="breadcrumb">
+        <li><a href="dashboard.php">Dashboard</a></li>
+        <!--<li><a href="#">Tables</a></li>-->
+        <!--<li class="active">Manage Report</li>-->
+      </ol>
+
+    <!-- Start Page Header Right Div -->
+    <!--<div class="right">-->
+    <!--  <div class="btn-group" role="group" aria-label="...">-->
+    <!--    <a href="dashboard.php" class="btn btn-light">Dashboard</a>-->
+    <!--    <a href="#" class="btn btn-light"><i class="fa fa-refresh"></i></a>-->
+       <!-- <a href="#" class="btn btn-light"><i class="fa fa-search"></i></a>-->
+    <!--    <a href="#" class="btn btn-light" id="topstats"><i class="fa fa-line-chart"></i></a>-->
+    <!--  </div>-->
+    <!--</div>-->
+    <!-- End Page Header Right Div -->
+
+  </div>
+  <!-- End Page Header -->
+
+  <!-- Start Presentation -->
+  <div class="row presentation">
+
+    <div class="col-lg-8 col-md-6 titles">
+      <!-- <span class="icon color10-bg"><i class="fa fa-table"></i></span> -->
+      <h1><a href="">Manpower Analysis Vehicle Report </a>  </h1> 
+      
+       <h2>All CCC</h2>
+      <b><?php date_default_timezone_set("Asia/Kolkata");
+      echo "Report As On  " . date("d-m-y") . " at " . date("h:i") . "<br>"; ?></b>
+    </div>
+
+
+  </div>
+  <!-- End Presentation -->
+
+
+ <!-- //////////////////////////////////////////////////////////////////////////// --> 
+<!-- START CONTAINER -->
+<div class="container-padding">
+
+
+  <!-- Start Row -->
+  <div class="row">
+
+    <!-- Start Panel -->
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <!--<div class="panel-title">-->
+        <!--  Manage Report-->
+        <!--</div>-->
+        
+                    <!-- <form method="post">
+                         <select class="" name="unit" required>
+                           <option value=""> Unit</option>
+                            <?php
+                         
+                          /*  $qu=mysqli_query($con,"select * from Brigade where isactive = 1") ;                    
+                            if(mysqli_num_rows($qu)>0)
+                           { 
+                            while($res1=mysqli_fetch_assoc($qu)){
+                              $Id =$res1['Id'];
+                              $Brigade =$res1['Brigade'];
+                              ?>
+                               
+                             <?php echo $Brigade;?>
+                           <?php }
+                         }*/
+                            ?>
+                     
+                        </select> 
+                      
+                       <button type="submit" name="submit" class="btn btn-default">Submit</button>
+                
+                     </form-->
+                                
+                
+        
+        <div class="panel-body table-responsive">
+<form action="" method="post">
+<!-- <form action="get_vehicle_records.php" method="post"> -->
+      <!--       <table id="example0" class="table display">
+                <thead>
+                    <tr>
+                        <th>Category </th>
+                                         <!-- <th>Active</th>
+                        <th>Options</th>-->
+                    
+                   
+                
+                 
+                   
+                  <?php
+                  
+          //$qu=mysqli_query($con,"select distinct(unitcategory) from Brigade  ") ;                    
+                            //if(mysqli_num_rows($qu)>0)
+                       //    { 
+                       //     while($res1=mysqli_fetch_assoc($qu)){
+                            //  $Id =$res1['unitcategory'];
+                            
+                  //$unitcat= $res1['unitcategory'];
+                 
+               //   if(mysqli_num_rows($qry)>0)
+               //   {
+               //   while($r=mysqli_fetch_assoc($qry))
+               //   {
+                     // echo "fgfd";
+                  ?>
+                  
+                 <!--  <tr>
+                     
+                          <td><a href="unit_listing.php?unitcat=<?php //echo $unitcat ?>"><?php // echo $unitcat ?></td>
+                          <td><?php   //echo $product?></a></td>
+                          <td><?php //echo $r['trade']?></td>-->
+                       <!--   <td><?php //  echo ($product* $subproduct) ;?></td>-->
+                        <!--  <td><?php //  echo $T= ($product * $subproduct) ?></td>-->
+                          <!--<td>
+                          <?php 
+                  //}
+                //  }
+                
+                          /*$s=$pcm+$ncm;
+                          
+                          echo ($T- $s);*/
+                          ?></td>-->
+                        
+                            
+                            
+ 
+                         
+                    
+                  <?php
+              /* if($unit!=''){
+                   $q2=mysqli_query($con, "SELECT COUNT(*) FROM `fault` where unit='$unit'") ; 
+               }else{
+                    //echo "SELECT COUNT(*)FROM `fault` where unitcat ='$unitcat' ";
+                   $q2=mysqli_query($con, "SELECT COUNT(*)FROM `fault` where unitcat ='$unitcat' ") ; 
+               }*/
+                                    
+                //    if(mysqli_num_rows($q2)>0)
+                //   { 
+               //     $res2=mysqli_fetch_assoc($q2);
+                     
+             
+              
+           //  $product=$res2['COUNT(*)'] ;
+                
+            //     $q22=mysqli_query($con, "SELECT COUNT(*)FROM `fault` where unitcat ='$unitcat'  ") ;                    
+                //    if(mysqli_num_rows($q22)>0)
+                //   { 
+                //    $res22=mysqli_fetch_assoc($q22);
+                     
+               
+              //  $subproduct =$res22['COUNT(*)'] ;
+                
+      /* if($unit!=''){
+                   $query=mysqli_query($con, "SELECT COUNT(*) FROM `fault` where fault='s' and  unit='$unit'") ; 
+               }else{
+                
+               // echo  "SELECT COUNT(*)FROM `fault` where fault='s' ";
+                  $query=mysqli_query($con, "SELECT COUNT(*)FROM `fault` where fault='s' and unitcat ='$unitcat' ") ;  
+               }*/
+                  //  if(mysqli_num_rows($query)>0)
+                   /*{ 
+                    while($res=mysqli_fetch_assoc($query)){
+                     
+                $s =$res['COUNT(*)'] ;
+                      
+                     if($unit!=''){
+                   $query1=mysqli_query($con, "SELECT COUNT(*) FROM `fault` where fault='NMC' and  unit='$unit'") ; 
+               }else{
+                $query1=mysqli_query($con, "SELECT COUNT(*)FROM `fault` where fault='NMC' and  unitcat ='$unitcat' ") ;    
+               }
+                    if(mysqli_num_rows($query1)>0)
+                   { 
+                    while($res1=mysqli_fetch_assoc($query1))/*{
+                     
+
+                $ncm= $res1['COUNT(*)'] ;
+                      if($unit!=''){
+                   $q1=mysqli_query($con, "SELECT COUNT(*) FROM `fault` where fault='PMC' and  unit='$unit'") ; 
+               }else{
+                       $q1=mysqli_query($con, "SELECT COUNT(*)FROM `fault` where fault='PMC' and unitcat ='$unitcat' ") ;  
+               }
+                    if(mysqli_num_rows($q1)>0)
+                   { 
+                    $res11=mysqli_fetch_assoc($q1);
+                     
+               
+               $pcm=$res11['COUNT(*)'] ;
+               
+               
+               
+                
+                            
+                          
+
+                    ?>
+                    
+                    
+                    
+                    
+                      <tr>
+                          <td><a href="unit_listing.php?unitcat=<?php echo $unitcat ?>"><?php  echo $unitcat ?></td>
+                          <td><?php   echo $product?></a></td>
+                       <!--   <td><?php //  echo ($product* $subproduct) ;?></td>-->
+                        <!--  <td><?php //  echo $T= ($product * $subproduct) ?></td>-->
+                          <!--<td>
+                          <?php   
+                          /*$s=$pcm+$ncm;
+                          
+                          echo ($T- $s);*/
+                          ?><!--</td>
+                        
+                            
+                            
+ 
+                         
+                      </tr-->
+                      
+                   <?php
+                   
+        
+        
+ //   } 
+                        
+    //                }*/
+                       
+              //     }
+                        
+               //     } }*/ 
+            //   } 
+              //   }
+                 
+                 
+                 
+                //   }
+                               
+                 //          }           
+                       
+                   
+                //    else
+                //    {
+                 //      echo 'No Record Found.';
+//
+           //         }
+                ?>
+                    <!--<th>
+                   
+                     <select name="unit" required>
+                   <option value=""> Vehicle</option>
+                    <?php
+                 
+                    $qu=mysqli_query($con,"SELECT DISTINCT vehicle from vehicle") ;                    
+                    if(mysqli_num_rows($qu)>0)
+                   { 
+                    while($res1=mysqli_fetch_assoc($qu)){
+                      /*$id =$res1['Id'];*/
+                      $vehicle =$res1['vehicle'];
+                      ?>
+                       
+                      <option value="<?php echo $vehicle; ?>"><?php echo $vehicle?></option>
+                   <?php }
+                 }
+                    ?>
+                     
+                      </select>  
+                      </th>
+                      <th>
+                      
+                      <input type="submit" name="submit">
+                      </th>
+                      </tr>
+                    
+                </thead>
+                   
+                <tbody>
+                </tbody>
+                
+            </table> -->
+  
+
+  <!-- fetch data count -->
+
+<table id="example0" class="table display">
+                <thead>
+                    <tr>
+                        <th>Vehicle </th>
+                       
+                        <TH> Total </TH>                    
+                        <TH> Defi </TH>                    
+                                          
+                    </tr>
+                </thead>
+                <tbody>
+                  <?php
+                 
+          $query=mysqli_query($con,"SELECT DISTINCT 
+          	manpower_link.Unit,
+          	manpower_link.batch,
+          	manpower_link.vehicle,          	
+          	vehicle.vehicle as wer         	
+          	from manpower_link
+          	INNER JOIN vehicle ON manpower_link.vehicle=vehicle.Id") ;
+                   if(mysqli_num_rows($query)>0)
+                           { 
+                            while($res1=mysqli_fetch_assoc($query)){
+                            //  $Id =$res1['Id'];
+                            $unit=$res1['Unit'];
+                            $unit1=$res1['batch'];
+                  $unitcat= $res1['vehicle'];
+                  $wer= $res1['wer'];                
+                  
+               if($unit!=''){
+                   $q2=mysqli_query($con, "SELECT COUNT(*) as total FROM `manpower_link` where vehicle ='$unitcat'") ;                    
+                   $q3=mysqli_query($con, "SELECT COUNT(*) as total1 FROM `manage_casuality` where vehicle ='$unitcat' and category='$unit' and casuality='1'") ;                   
+                  
+               }else{
+                    //echo "SELECT COUNT(*)FROM `fault` where unitcat ='$unitcat' ";
+                   $q2=mysqli_query($con, "SELECT COUNT(*) as total2 FROM `manage_casuality` where vehicle ='$unitcat'") ;
+
+               }
+                                    
+                    if(mysqli_num_rows($q2)>0)
+                   { 
+                    $res2=mysqli_fetch_assoc($q2);
+                     
+             
+              
+             $product=$res2['total'] ;
+                
+                   } 
+                    if(mysqli_num_rows($q3)>0)
+                   { 
+                    $res3=mysqli_fetch_assoc($q3);
+                     
+             
+              
+             $casuality=$res3['total1'] ;
+                
+                   } 
+
+                    ?>
+                    
+                    
+                    
+                    
+                      <tr>
+                          <td><?php  echo $wer ?></td>
+                          <td><a href="part_listing_get_vehicle.php?prd=<?php echo $unitcat ?>"><?php   echo $product-$casuality?></a></td>
+                          <td><?php   echo $casuality?></td>
+                      </tr>
+                  <?php
+    } }
+                  else
+                    {
+                       echo 'No Record Found.';
+                   }
+                ?>
+
+                  
+                </tbody>
+            </table>
+        <!-- end of fetch data count -->
+      
+  </form>
+
+
+
+</div>
+
+  </div>
+  <!-- End Row -->
+
+
+</div>
+</div>
+</div>
+</div>
+<!-- END CONTAINER -->
+ <!-- //////////////////////////////////////////////////////////////////////////// --> 
+
+<!-- ================================================
+jQuery Library
+================================================ -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<!-- ================================================
+Bootstrap Core JavaScript File
+================================================ -->
+<script src="js/bootstrap/bootstrap.min.js"></script>
+
+<!-- ================================================
+Plugin.js - Some Specific JS codes for Plugin Settings
+================================================ -->
+<script type="text/javascript" src="js/plugins.js"></script>
+
+<!-- ================================================
+Data Tables
+================================================ -->
+<script src="js/datatables/datatables.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#example0').DataTable();
+} );
+</script>
+
+
+
+<script>
+$(document).ready(function() {
+    var table = $('#example').DataTable({
+        "columnDefs": [
+            { "visible": false, "targets": 2 }
+        ],
+        "order": [[ 2, 'asc' ]],
+        "displayLength": 25,
+        "drawCallback": function ( settings ) {
+            var api = this.api();
+            var rows = api.rows( {page:'current'} ).nodes();
+            var last=null;
+ 
+            api.column(2, {page:'current'} ).data().each( function ( group, i ) {
+                if ( last !== group ) {
+                    $(rows).eq( i ).before(
+                        '<tr class="group"><td colspan="5">'+group+'</td></tr>'
+                    );
+ 
+                    last = group;
+                }
+            } );
+        }
+    } );
+ 
+    // Order by the grouping
+    $('#example tbody').on( 'click', 'tr.group', function () {
+        var currentOrder = table.order()[0];
+        if ( currentOrder[0] === 2 && currentOrder[1] === 'asc' ) {
+            table.order( [ 2, 'desc' ] ).draw();
+        }
+        else {
+            table.order( [ 2, 'asc' ] ).draw();
+        }
+    } );
+} );
+</script>
+
+
+ <?php
+/*---------- Footer ----------*/
+require_once ('footer.php');
+?>
